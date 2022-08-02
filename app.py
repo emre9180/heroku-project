@@ -8,8 +8,7 @@ queue = []
 
 @app.route('/', methods=['GET'])
 def index():
-  res =  {"sunucuip": "http://192.168.46.179:5000","rtsp": "rtsp://admin:L27C7D5E@192.168.1.104:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif" }
-  return jsonify(res)
+  res =  {"sunucuip": "http://192.168.46.179:5000","rtsp": "rtsp://192.168.1.2:554/1/1"
 
 if __name__ == '__main__':
     app.run()
